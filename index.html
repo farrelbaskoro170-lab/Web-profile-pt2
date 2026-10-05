@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farrel Rafi — Student & Developer Portfolio</title>
+    
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Custom Neobrutalism CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- =========================================
+         NEOBRUTALISM LOADER
+         ========================================= -->
+    <div id="loader-wrapper">
+        <div class="loader-box">
+            <h1 id="loader-text">HALO</h1>
+            <div class="loader-bar-wrapper">
+                <div id="progress-bar"></div>
+            </div>
+            <div id="percent-text">0%</div>
+        </div>
+    </div>
+
+    <!-- =========================================
+         MARQUEE TICKER BANNER
+         ========================================= -->
+    <div class="neo-marquee-wrap">
+        <div class="neo-marquee">
+            <span>⚡ S1 SISTEM INFORMASI</span>
+            <span>✦</span>
+            <span>UNIVERSITAS 17 AGUSTUS 1945 SURABAYA</span>
+            <span>✦</span>
+            <span>WEB DEVELOPMENT</span>
+            <span>✦</span>
+            <span>UI/UX DESIGN</span>
+            <span>✦</span>
+            <span>FULLSTACK DEV</span>
+            <span>✦</span>
+            <span>OPEN FOR COLLABORATION</span>
+            <span>✦</span>
+            <span>⚡ S1 SISTEM INFORMASI</span>
+            <span>✦</span>
+            <span>UNIVERSITAS 17 AGUSTUS 1945 SURABAYA</span>
+            <span>✦</span>
+            <span>WEB DEVELOPMENT</span>
+            <span>✦</span>
+            <span>UI/UX DESIGN</span>
+            <span>✦</span>
+            <span>FULLSTACK DEV</span>
+            <span>✦</span>
+            <span>OPEN FOR COLLABORATION</span>
+            <span>✦</span>
+        </div>
+    </div>
+
+    <!-- =========================================
+         MAIN CONTAINER
+         ========================================= -->
+    <main class="container py-5" style="max-width: 1040px;">
+        
+        <!-- CARD 1: IDENTITY & HERO SECTION -->
+        <section class="neo-card" aria-label="Profil Utama">
+            <div class="row align-items-center">
+                <!-- Foto / ID Card Keychain -->
+                <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                    <div class="id-card-wrapper" title="Hover me!">
+                        <div class="id-card-lanyard"></div>
+                        <div class="id-card-clip"></div>
+                        <div class="id-card-body">
+                            <img src="https://ui-avatars.com/api/?name=Farrel+Rafi&background=0EA5E9&color=fff&size=300" alt="Foto Farrel Rafi Dwi Baskoro" class="id-card-photo">
+                            <div class="fw-bolder fs-6 mb-1">Farrel Rafi</div>
+                            <div class="id-card-barcode">
+                                <span style="width:3px"></span><span style="width:1px"></span><span style="width:4px"></span>
+                                <span style="width:2px"></span><span style="width:5px"></span><span style="width:1px"></span>
+                                <span style="width:3px"></span><span style="width:2px"></span><span style="width:4px"></span>
+                                <span style="width:1px"></span><span style="width:3px"></span><span style="width:2px"></span>
+                            </div>
+                            <div class="id-card-nbi">NBI: 1482500047</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Info Identitas -->
+                <div class="col-lg-8 ps-lg-4">
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <span class="neo-tag tag-lime">🟢 Mahasiswa Aktif</span>
+                        <span class="neo-tag tag-cyan">💻 Web Developer</span>
+                        <span class="neo-tag tag-purple">🎓 Angkatan 2025</span>
+                    </div>
+
+                    <h1 class="hero-name">
+                        Farrel Rafi <br>
+                        <span class="hero-highlight">Dwi Baskoro</span>
+                    </h1>
+
+                    <div class="univ-text">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.5.5 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89L8 0ZM3.777 3h8.447L8 1 3.777 3ZM2 6v7h1V6H2Zm2 0v7h2.5V6H4Zm3.5 0v7h1V6h-1Zm2 0v7H12V6H9.5ZM13 6v7h1V6h-1Zm2-1V4H1v1h14Zm-.39 9H1.39l-.25 1h13.72l-.25-1Z"/></svg>
+                        <span>Universitas 17 Agustus 1945 Surabaya</span>
+                    </div>
+
+                    <!-- Tombol Cepat Info -->
+                    <div class="d-flex flex-wrap gap-2 mt-3">
+                        <button class="neo-btn neo-btn-primary" onclick="copyText('1482500047', 'NBI (1482500047)')">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/><path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/></svg>
+                            <span>NBI: 1482500047</span>
+                        </button>
+                        <span class="neo-tag tag-yellow" style="font-size: 0.95rem; padding: 10px 18px;">
+                            📚 S1 Sistem Informasi
+                        </span>
+                    </div>
+
+                    <!-- Quick Metrics Strip -->
+                    <div class="stat-pill-grid">
+                        <div class="stat-pill" style="background: #E0F2FE;">
+                            <div class="stat-number">3.78</div>
+                            <div class="stat-label">IPK Kumulatif</div>
+                        </div>
+                        <div class="stat-pill" style="background: #FEF08A;">
+                            <div class="stat-number">17</div>
+                            <div class="stat-label">Total SKS</div>
+                        </div>
+                        <div class="stat-pill" style="background: #DCFCE7;">
+                            <div class="stat-number">7</div>
+                            <div class="stat-label">Mata Kuliah</div>
+                        </div>
+                        <div class="stat-pill" style="background: #FCE7F3;">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Tingkat Kelulusan</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CARD 2: TENTANG SAYA & TECH STACK -->
+        <section class="neo-card" aria-label="Tentang Saya">
+            <div class="neo-card-header">
+                <h2 class="neo-card-title">
+                    <span class="neo-badge-icon" style="background: var(--neo-yellow);">⚡</span>
+                    Tentang Saya
+                </h2>
+                <span class="neo-tag tag-pink">Biografi Singkat</span>
+            </div>
+            
+            <p style="font-size: 1.05rem; line-height: 1.75; font-weight: 600; color: #27272A; margin-bottom: 20px;">
+                Halo! Saya adalah mahasiswa program studi <strong style="background: var(--neo-yellow); padding: 0 4px; border: 1.5px solid #000;">Sistem Informasi</strong> yang berdedikasi dan memiliki minat mendalam pada <strong style="background: var(--neo-cyan); padding: 0 4px; border: 1.5px solid #000;">Pengembangan Sistem Berbasis Web</strong>. Saya selalu tertantang untuk mengubah ide-ide kompleks menjadi baris kode yang bersih dan merancang antarmuka pengguna yang intuitif, responsif, dan interaktif. Di luar akademik, saya aktif mencari tahu perkembangan teknologi terbaru dan bereksperimen dengan berbagai desain modern seperti Neobrutalism.
+            </p>
+
+            <!-- Tech Stack Pills -->
+            <div class="d-flex flex-wrap gap-2 pt-2 align-items-center">
+                <span class="fw-bolder me-2">Tech Stack:</span>
+                <span class="neo-tag tag-yellow">HTML5</span>
+                <span class="neo-tag tag-cyan">CSS3</span>
+                <span class="neo-tag tag-lime">JavaScript (ES6+)</span>
+                <span class="neo-tag tag-purple">Bootstrap 5</span>
+                <span class="neo-tag tag-orange">SQL & Database</span>
+                <span class="neo-tag tag-pink">UI/UX Design</span>
+                <span class="neo-tag tag-green">Git & GitHub</span>
+            </div>
+        </section>
+
+        <!-- CARD 3: TRANSKRIP NILAI AKADEMIK & FILTER -->
+        <section class="neo-card" aria-label="Transkrip Nilai Akademik">
+            <div class="neo-card-header">
+                <h2 class="neo-card-title">
+                    <span class="neo-badge-icon" style="background: var(--neo-cyan);">📊</span>
+                    Transkrip Nilai Akademik
+                </h2>
+                
+                <!-- Filter Controls -->
+                <div class="d-flex gap-2 flex-wrap" role="tablist">
+                    <button class="neo-tab-btn btn-smt-tab active" data-smt="all">Semua Semester</button>
+                    <button class="neo-tab-btn btn-smt-tab" data-smt="smt1">Semester 1</button>
+                    <button class="neo-tab-btn btn-smt-tab" data-smt="smt2">Semester 2</button>
+                </div>
+            </div>
+
+            <!-- TABEL SEMESTER 1 -->
+            <div class="semester-section" id="section-smt1">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                    <h3 class="fs-6 fw-bolder mb-0" style="background: var(--neo-yellow); border: 2px solid var(--border-dark); padding: 4px 12px; border-radius: var(--radius-sm); display: inline-block;">
+                        📌 SEMESTER 1 (11 SKS)
+                    </h3>
+                    <span class="fw-bold text-muted" style="font-size: 0.85rem;">IPS: 3.75</span>
+                </div>
+                <div class="neo-table-wrapper table-responsive">
+                    <table class="neo-table">
+                        <thead>
+                            <tr>
+                                <th>Kode</th>
+                                <th>Mata Kuliah</th>
+                                <th class="text-center">SKS</th>
+                                <th class="text-center">Nilai</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="fw-bold">14823352</td>
+                                <td>Matematika Diskrit</td>
+                                <td class="text-center">2</td>
+                                <td class="text-center"><span class="neo-grade-badge grade-a">A</span></td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">14823342</td>
+                                <td>Aljabar Linier</td>
+                                <td class="text-center">2</td>
+                                <td class="text-center"><span class="neo-grade-badge grade-ab">AB</span></td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">14823202</td>
+                                <td>Sistem Operasi</td>
+                                <td class="text-center">2</td>
+                                <td class="text-center"><span class="neo-grade-badge grade-ab">AB</span></td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">14823362</td>
+                                <td>Kalkulus</td>
+                                <td class="text-center">2</td>
+                                <td class="text-center"><span class="neo-grade-badge grade-ab">AB</span></td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">14823103</td>
+                                <td>Konsep Dan Fondasi Sistem Informasi</td>
+                                <td class="text-center">3</td>
+                                <td class="text-center"><span class="neo-grade-badge grade-a">A</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- TABEL SEMESTER 2 -->
+            <div class="semester-section mt-4" id="section-smt2">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                    <h3 class="fs-6 fw-bolder mb-0" style="background: var(--neo-cyan); border: 2px solid var(--border-dark); padding: 4px 12px; border-radius: var(--radius-sm); display: inline-block;">
+                        📌 SEMESTER 2 (6 SKS)
+                    </h3>
+                    <span class="fw-bold text-muted" style="font-size: 0.85rem;">IPS: 3.82</span>
+                </div>
+                <div class="neo-table-wrapper table-responsive">
+                    <table class="neo-table">
+                        <thead>
+                            <tr>
+                                <th>Kode</th>
+                                <th>Mata Kuliah</th>
+                                <th class="text-center">SKS</th>
+                                <th class="text-center">Nilai</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="fw-bold">SI201</td>
+                                <td>Pemrograman Berorientasi Objek</td>
+                                <td class="text-center">3</td>
+                                <td class="text-center"><span class="neo-grade-badge grade-a">A</span></td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">SI202</td>
+                                <td>Desain Web Dasar</td>
+                                <td class="text-center">3</td>
+                                <td class="text-center"><span class="neo-grade-badge grade-a">A</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- CARD INTERAKTIF DOM (TUGAS INDIVIDU 2): MANAJEMEN JADWAL KULIAH -->
+        <section class="neo-card" id="section-jadwal-interaktif" aria-label="Manajemen Jadwal Kuliah Interaktif">
+            <div class="neo-card-header">
+                <div>
+                    <h2 class="neo-card-title">
+                        <span class="neo-badge-icon" style="background: var(--neo-lime);">📅</span>
+                        Manajemen Jadwal Kuliah (DOM Interaktif)
+                    </h2>
+                    <p class="text-muted fw-bold mb-0 mt-1" style="font-size: 0.88rem;">
+                        Data dinamis dirender via JavaScript DOM (Array of Objects) dengan filter & form validasi
+                    </p>
+                </div>
+                
+                <button id="btn-toggle-form" class="neo-btn neo-btn-primary" type="button">
+                    <span id="btn-toggle-icon">➕</span>
+                    <span id="btn-toggle-text">Tambah Matkul</span>
+                </button>
+            </div>
+
+            <!-- FORM TAMBAH JADWAL (DEFAULT HIDDEN D-NONE) -->
+            <div id="wrapper-form-jadwal" class="neo-form-card d-none">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <h3 class="fs-6 fw-bolder mb-0">📝 Form Tambah Mata Kuliah Baru</h3>
+                    <span class="badge bg-dark text-white p-2" style="border: 2px solid #000; border-radius: 6px;">Validasi preventDefault()</span>
+                </div>
+
+                <form id="form-tambah-jadwal" novalidate>
+                    <div class="row g-3">
+                        <div class="col-md-3">
+                            <label for="input-kode" class="neo-form-label">Kode Matkul *</label>
+                            <input type="text" id="input-kode" class="neo-input" placeholder="Misal: SI106" maxlength="10">
+                            <div id="error-kode" class="neo-error-text d-none">Kode wajib diisi!</div>
+                        </div>
+                        <div class="col-md-5">
+                            <label for="input-nama" class="neo-form-label">Nama Mata Kuliah *</label>
+                            <input type="text" id="input-nama" class="neo-input" placeholder="Misal: Rekayasa Perangkat Lunak">
+                            <div id="error-nama" class="neo-error-text d-none">Nama mata kuliah wajib diisi!</div>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="input-hari" class="neo-form-label">Hari *</label>
+                            <select id="input-hari" class="neo-input">
+                                <option value="Senin">Senin</option>
+                                <option value="Selasa">Selasa</option>
+                                <option value="Rabu">Rabu</option>
+                                <option value="Kamis">Kamis</option>
+                                <option value="Jumat">Jumat</option>
+                                <option value="Sabtu">Sabtu</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="input-sks" class="neo-form-label">SKS (1-6) *</label>
+                            <input type="number" id="input-sks" class="neo-input" placeholder="3" min="1" max="6">
+                            <div id="error-sks" class="neo-error-text d-none">SKS (1 - 6)!</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="input-status" class="neo-form-label">Status Mata Kuliah</label>
+                            <select id="input-status" class="neo-input">
+                                <option value="true">Wajib</option>
+                                <option value="false">Pilihan</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-end gap-2">
+                            <button type="submit" class="neo-btn neo-btn-cyan w-100">
+                                💾 Simpan ke Array & DOM
+                            </button>
+                            <button type="button" id="btn-batal-form" class="neo-btn" style="background:#F4F4F5;">
+                                Batal
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- SEARCH & FILTER TOOLBAR -->
+            <div class="row g-3 mb-3 align-items-center">
+                <div class="col-md-6">
+                    <div style="position: relative;">
+                        <input type="text" id="input-cari-jadwal" class="neo-input" placeholder="🔍 Cari nama / kode / hari matkul...">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex gap-2 justify-content-md-end flex-wrap">
+                        <button class="neo-tab-btn btn-filter-jadwal active" data-filter="semua">Semua (<span id="count-semua">5</span>)</button>
+                        <button class="neo-tab-btn btn-filter-jadwal" data-filter="wajib">Wajib (<span id="count-wajib">3</span>)</button>
+                        <button class="neo-tab-btn btn-filter-jadwal" data-filter="pilihan">Pilihan (<span id="count-pilihan">2</span>)</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TABEL DINAMIS HASIL RENDER DOM -->
+            <div class="neo-table-wrapper table-responsive mb-3">
+                <table class="neo-table">
+                    <thead>
+                        <tr>
+                            <th>Kode</th>
+                            <th>Nama Mata Kuliah</th>
+                            <th class="text-center">Hari</th>
+                            <th class="text-center">SKS</th>
+                            <th class="text-center">Status</th>
+                            <th class="text-center">Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabel-jadwal-body">
+                        <!-- DI-RENDER DINAMIS SECARA REAL-TIME OLEH SCRIPT.JS -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- METRIK STATISTIK JADWAL TERUPDATE -->
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="stat-pill" style="background: #E0F2FE;">
+                        <div class="stat-number" id="stat-total-matkul">5</div>
+                        <div class="stat-label">Total Mata Kuliah</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stat-pill" style="background: #DCFCE7;">
+                        <div class="stat-number" id="stat-total-sks">13 SKS</div>
+                        <div class="stat-label">Total Beban SKS</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stat-pill" style="background: #FEF08A;">
+                        <div class="stat-number" id="stat-sks-wajib">9 SKS</div>
+                        <div class="stat-label">Total SKS Wajib</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CARD 4: HISTORIS IPK & RINGKASAN PRESTASI -->
+        <section class="neo-card" aria-label="Historis Indeks Prestasi">
+            <div class="row g-4 align-items-stretch">
+                <div class="col-md-7">
+                    <div class="neo-card-header">
+                        <h2 class="neo-card-title">
+                            <span class="neo-badge-icon" style="background: var(--neo-lime);">📈</span>
+                            Historis Indeks Prestasi
+                        </h2>
+                    </div>
+                    
+                    <div class="neo-table-wrapper table-responsive">
+                        <table class="neo-table">
+                            <thead>
+                                <tr>
+                                    <th>Semester</th>
+                                    <th>SKS Diambil</th>
+                                    <th class="text-end">Indeks (IPS)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Semester 1</td>
+                                    <td>11 SKS</td>
+                                    <td class="text-end fw-bolder" style="color: #059669;">3.75</td>
+                                </tr>
+                                <tr>
+                                    <td>Semester 2</td>
+                                    <td>6 SKS</td>
+                                    <td class="text-end fw-bolder" style="color: #059669;">3.82</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="ipk-neo-banner">
+                        <span class="neo-tag tag-yellow mb-2">⭐ PRESTASI AKADEMIK</span>
+                        <div class="text-uppercase fw-bold" style="font-size: 0.8rem; letter-spacing: 1px;">IPK KUMULATIF</div>
+                        <div class="ipk-neo-val">3.78</div>
+                        <div class="badge bg-dark text-white p-2 px-3 fs-6" style="border: 2px solid #000; border-radius: 8px;">
+                            🎉 DENGAN PUJIAN (CUM LAUDE)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CARD 5: LIVE JAVASCRIPT CONSOLE WIDGET (DEMO SCRIPT.JS) -->
+        <section class="neo-card" aria-label="Eksekusi Script JS">
+            <div class="neo-card-header">
+                <h2 class="neo-card-title">
+                    <span class="neo-badge-icon" style="background: var(--neo-orange);">💻</span>
+                    Live Script.js Execution
+                </h2>
+                <span class="neo-tag tag-cyan">Output Console Terminal</span>
+            </div>
+            
+            <p class="mb-2 fw-semibold" style="color: var(--text-muted);">
+                Hasil komputasi algoritma jadwal mata kuliah & filter SKS wajib dari file <code>Script.js</code>:
+            </p>
+
+            <div class="neo-terminal">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-yellow"></span>
+                        <span class="dot dot-green"></span>
+                    </div>
+                    <div class="terminal-title">bash — script.js:output</div>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-line"><span class="term-cyan">=== DATA JADWAL MATA KULIAH ===</span></div>
+                    <div class="terminal-line text-white">▶ Array(5) [SI101 (Senin, 3 SKS), SI102 (Selasa, 3 SKS), SI103 (Rabu, 2 SKS), SI104 (Kamis, 3 SKS), SI105 (Jumat, 2 SKS)]</div>
+                    <br>
+                    <div class="terminal-line"><span class="term-green">=== HASIL PERHITUNGAN TOTAL SKS WAJIB ===</span></div>
+                    <div class="terminal-line text-white">Total SKS untuk mata kuliah wajib Anda adalah: <span class="term-yellow">9 SKS</span></div>
+                    <br>
+                    <div class="terminal-line"><span class="term-pink">=== HASIL FILTER MATA KULIAH BERAT (>= 3 SKS) ===</span></div>
+                    <div class="terminal-line text-white">▶ Ditemukan 3 Mata Kuliah: <span class="text-white fw-bold">[Pengembangan Sistem Berbasis Web, Basis Data Lanjut, Manajemen Proyek IT]</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER & CONTACT -->
+        <footer class="neo-card text-center" style="background: var(--neo-yellow);" aria-label="Kontak">
+            <h2 class="fw-bolder fs-3 mb-2">Mari Terhubung & Berkolaborasi! 🚀</h2>
+            <p class="fw-bold mb-4" style="color: #27272A;">Tertarik bekerja sama atau ingin berdiskusi seputar proyek web?</p>
+            
+            <div class="d-flex justify-content-center gap-3 mb-3">
+                <a href="mailto:farrelrafi@example.com" class="neo-social-btn" aria-label="Kirim Email" title="Email">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/></svg>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="neo-social-btn" aria-label="LinkedIn Profile" title="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="neo-social-btn" aria-label="GitHub Profile" title="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                </a>
+            </div>
+
+            <div class="fw-bolder" style="font-size: 0.85rem; color: #18181B;">
+                © 2026 Farrel Rafi Dwi Baskoro — UNTAG Surabaya. All Rights Reserved.
+            </div>
+        </footer>
+    </main>
+
+    <!-- TOAST NOTIFICATION -->
+    <div id="neo-toast" class="neo-toast" role="alert" aria-live="polite">
+        <span id="toast-icon">📋</span>
+        <span id="toast-msg">Teks berhasil disalin!</span>
+    </div>
+
+    <!-- EXTERNAL SCRIPT -->
+    <script src="Script.js"></script>
+</body>
+</html>
