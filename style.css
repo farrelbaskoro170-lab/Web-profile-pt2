@@ -1,26 +1,22 @@
 :root {
-    --bg-main: #FFFDF5;
+    /* 5-Color Official Palette */
+    --c-red: #B80C09;
+    --c-teal: #0B4F6C;
+    --c-cyan: #01BAEF;
+    --c-white: #FBFBFF;
+    --c-black: #040F16;
+
+    --bg-main: #FBFBFF;
     --bg-card: #FFFFFF;
-    --border-dark: #121212;
-    --text-dark: #121212;
-    --text-muted: #52525B;
+    --border-dark: #040F16;
+    --text-dark: #040F16;
+    --text-muted: #0B4F6C;
     
-    /* Neobrutalism Accent Palette */
-    --neo-yellow: #FFE600;
-    --neo-cyan: #38BDF8;
-    --neo-pink: #FF6B8B;
-    --neo-green: #34D399;
-    --neo-purple: #A78BFA;
-    --neo-orange: #FB923C;
-    --neo-lime: #A3E635;
-    
-    /* Shadows */
     --neo-shadow-sm: 3px 3px 0px var(--border-dark);
     --neo-shadow: 5px 5px 0px var(--border-dark);
     --neo-shadow-lg: 8px 8px 0px var(--border-dark);
     --neo-shadow-hover: 7px 7px 0px var(--border-dark);
     
-    /* Radius */
     --radius-sm: 8px;
     --radius-md: 16px;
     --radius-lg: 24px;
@@ -36,29 +32,28 @@ body {
     background-color: var(--bg-main);
     color: var(--text-dark);
     overflow-x: hidden;
-    background-image: radial-gradient(rgba(18, 18, 18, 0.12) 1.5px, transparent 1.5px);
+    background-image: radial-gradient(rgba(4, 15, 22, 0.12) 1.5px, transparent 1.5px);
     background-size: 24px 24px;
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: antialiased;
 }
 
-
 #loader-wrapper {
     position: fixed;
     top: 0; left: 0;
     width: 100vw; height: 100vh;
-    background-color: var(--neo-yellow);
+    background-color: var(--c-black);
     display: flex; flex-direction: column;
     justify-content: center; align-items: center;
     z-index: 99999;
     transition: transform 0.6s cubic-bezier(0.85, 0, 0.15, 1);
-    border-bottom: 5px solid var(--border-dark);
+    border-bottom: 5px solid var(--c-cyan);
 }
 
 .loader-box {
-    background: #FFFFFF;
-    border: 4px solid var(--border-dark);
+    background: var(--c-white);
+    border: 4px solid var(--c-black);
     box-shadow: var(--neo-shadow-lg);
     border-radius: var(--radius-md);
     padding: 30px 40px;
@@ -71,14 +66,14 @@ body {
     font-size: 3rem;
     font-weight: 900;
     letter-spacing: -0.04em;
-    color: var(--text-dark);
+    color: var(--c-black);
     margin: 0 0 15px 0;
     text-transform: uppercase;
 }
 
 .loader-bar-wrapper {
     background: #FFFFFF;
-    border: 3px solid var(--border-dark);
+    border: 3px solid var(--c-black);
     border-radius: var(--radius-full);
     height: 20px;
     width: 100%;
@@ -90,7 +85,7 @@ body {
 #progress-bar {
     height: 100%;
     width: 0%;
-    background: var(--neo-pink);
+    background: linear-gradient(90deg, var(--c-cyan), var(--c-teal), var(--c-red));
     border-radius: var(--radius-full);
     transition: width 0.1s linear;
 }
@@ -98,7 +93,7 @@ body {
 #percent-text {
     font-weight: 800;
     font-size: 1.1rem;
-    color: var(--text-dark);
+    color: var(--c-teal);
     margin-top: 8px;
     display: inline-block;
 }
@@ -107,14 +102,13 @@ body {
     transform: translateY(-100vh);
 }
 
-
 .neo-marquee-wrap {
-    background: var(--border-dark);
-    color: #FFFFFF;
+    background: var(--c-black);
+    color: var(--c-white);
     overflow: hidden;
     white-space: nowrap;
-    border-bottom: 3px solid var(--border-dark);
-    padding: 10px 0;
+    border-bottom: 3.5px solid var(--border-dark);
+    padding: 12px 0;
     font-weight: 800;
     font-size: 0.95rem;
     letter-spacing: 1px;
@@ -128,6 +122,14 @@ body {
 .neo-marquee span {
     display: inline-block;
     padding: 0 20px;
+}
+
+.neo-marquee .accent-cyan {
+    color: var(--c-cyan);
+}
+
+.neo-marquee .accent-red {
+    color: var(--c-red);
 }
 
 @keyframes marqueeScroll {
@@ -185,9 +187,6 @@ body {
     box-shadow: 2px 2px 0px var(--border-dark);
 }
 
-/* =========================================
-   STICKERS & BADGES
-   ========================================= */
 .neo-tag {
     display: inline-flex;
     align-items: center;
@@ -208,17 +207,12 @@ body {
     transform: scale(1.04) rotate(-1deg);
 }
 
-.tag-yellow { background: var(--neo-yellow); }
-.tag-cyan { background: var(--neo-cyan); }
-.tag-pink { background: var(--neo-pink); color: #fff; }
-.tag-green { background: var(--neo-green); }
-.tag-purple { background: var(--neo-purple); color: #fff; }
-.tag-lime { background: var(--neo-lime); }
-.tag-orange { background: var(--neo-orange); color: #fff; }
+.tag-red { background: var(--c-red); color: #FFFFFF; }
+.tag-teal { background: var(--c-teal); color: #FFFFFF; }
+.tag-cyan { background: var(--c-cyan); color: var(--c-black); }
+.tag-white { background: var(--c-white); color: var(--c-black); }
+.tag-black { background: var(--c-black); color: var(--c-white); }
 
-/* =========================================
-   HERO / IDENTITY SECTION
-   ========================================= */
 .hero-name {
     font-size: 2.4rem;
     font-weight: 900;
@@ -233,7 +227,8 @@ body {
 }
 
 .hero-highlight {
-    background: var(--neo-yellow);
+    background: var(--c-cyan);
+    color: var(--c-black);
     padding: 0 8px;
     border: 2.5px solid var(--border-dark);
     box-shadow: 3px 3px 0px var(--border-dark);
@@ -244,16 +239,13 @@ body {
 .univ-text {
     font-size: 1.05rem;
     font-weight: 700;
-    color: var(--text-muted);
+    color: var(--c-teal);
     display: flex;
     align-items: center;
     gap: 8px;
     margin-bottom: 16px;
 }
 
-/* =========================================
-   STUDENT ID CARD / KEYCHAIN
-   ========================================= */
 .id-card-wrapper {
     position: relative;
     display: inline-block;
@@ -268,7 +260,7 @@ body {
     transform: translateX(-50%);
     width: 22px;
     height: 22px;
-    background: #E2E8F0;
+    background: var(--c-red);
     border: 3px solid var(--border-dark);
     border-radius: 50%;
     z-index: 10;
@@ -282,14 +274,14 @@ body {
     transform: translateX(-50%);
     width: 14px;
     height: 12px;
-    background: var(--neo-yellow);
+    background: var(--c-cyan);
     border: 2.5px solid var(--border-dark);
     border-radius: 3px;
     z-index: 11;
 }
 
 .id-card-body {
-    background: #FFFFFF;
+    background: var(--c-white);
     border: 3.5px solid var(--border-dark);
     border-radius: 18px;
     box-shadow: 6px 6px 0px var(--border-dark);
@@ -309,7 +301,7 @@ body {
     object-fit: cover;
     border-radius: 10px;
     border: 3px solid var(--border-dark);
-    background: var(--neo-cyan);
+    background: var(--c-teal);
     margin-bottom: 10px;
     display: inline-block;
 }
@@ -326,7 +318,7 @@ body {
 }
 
 .id-card-barcode span {
-    background: #FFFFFF;
+    background: var(--c-white);
     height: 100%;
     display: inline-block;
 }
@@ -339,9 +331,6 @@ body {
     color: var(--text-dark);
 }
 
-/* =========================================
-   STATISTICS STRIP & METRICS
-   ========================================= */
 .stat-pill-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
@@ -364,23 +353,28 @@ body {
     box-shadow: 4px 4px 0px var(--border-dark);
 }
 
+.stat-pill-cyan { background: var(--c-cyan); }
+.stat-pill-red { background: var(--c-red); color: #FFFFFF; }
+.stat-pill-red .stat-number, .stat-pill-red .stat-label { color: #FFFFFF; }
+.stat-pill-teal { background: var(--c-teal); color: #FFFFFF; }
+.stat-pill-teal .stat-number, .stat-pill-teal .stat-label { color: #FFFFFF; }
+.stat-pill-white { background: var(--c-white); }
+
 .stat-number {
     font-size: 1.7rem;
     font-weight: 900;
     line-height: 1;
     margin-bottom: 4px;
+    color: var(--c-black);
 }
 
 .stat-label {
     font-size: 0.75rem;
     font-weight: 800;
     text-transform: uppercase;
-    color: var(--text-muted);
+    color: var(--c-teal);
 }
 
-/* =========================================
-   NEOBRUTAL TABLE
-   ========================================= */
 .neo-table-wrapper {
     border: 3.5px solid var(--border-dark);
     border-radius: var(--radius-md);
@@ -397,7 +391,7 @@ body {
 }
 
 .neo-table thead th {
-    background: var(--border-dark);
+    background: var(--c-teal);
     color: #FFFFFF;
     padding: 14px 18px;
     font-weight: 900;
@@ -418,7 +412,7 @@ body {
 }
 
 .neo-table tbody tr:hover td {
-    background: #FFF9D2;
+    background: rgba(1, 186, 239, 0.12);
 }
 
 .neo-grade-badge {
@@ -434,17 +428,15 @@ body {
     box-shadow: 2px 2px 0px var(--border-dark);
 }
 
-.grade-a { background: var(--neo-green); color: var(--border-dark); }
-.grade-ab { background: var(--neo-cyan); color: var(--border-dark); }
-.grade-b { background: var(--neo-yellow); color: var(--border-dark); }
-.grade-bc { background: var(--neo-orange); color: #fff; }
-.grade-c { background: var(--neo-pink); color: #fff; }
+.grade-a { background: var(--c-red); color: #FFFFFF; }
+.grade-ab { background: var(--c-cyan); color: var(--c-black); }
+.grade-b { background: var(--c-teal); color: #FFFFFF; }
+.grade-bc { background: var(--c-white); color: var(--c-black); }
+.grade-c { background: var(--c-black); color: #FFFFFF; }
 
-/* =========================================
-   IPK SUMMARY BOX
-   ========================================= */
 .ipk-neo-banner {
-    background: var(--neo-lime);
+    background: var(--c-teal);
+    color: #FFFFFF;
     border: 3.5px solid var(--border-dark);
     border-radius: var(--radius-md);
     box-shadow: 5px 5px 0px var(--border-dark);
@@ -469,13 +461,11 @@ body {
     line-height: 0.95;
     margin: 8px 0;
     letter-spacing: -2px;
+    color: var(--c-cyan);
 }
 
-/* =========================================
-   TERMINAL / CONSOLE PREVIEW WIDGET
-   ========================================= */
 .neo-terminal {
-    background: #18181B;
+    background: var(--c-black);
     border: 3.5px solid var(--border-dark);
     border-radius: var(--radius-md);
     box-shadow: 5px 5px 0px var(--border-dark);
@@ -484,7 +474,7 @@ body {
 }
 
 .terminal-header {
-    background: #27272A;
+    background: var(--c-teal);
     padding: 10px 16px;
     display: flex;
     align-items: center;
@@ -503,12 +493,12 @@ body {
     border-radius: 50%;
     border: 1.5px solid var(--border-dark);
 }
-.dot-red { background: #EF4444; }
-.dot-yellow { background: #F59E0B; }
-.dot-green { background: #10B981; }
+.dot-red { background: var(--c-red); }
+.dot-yellow { background: var(--c-cyan); }
+.dot-green { background: #52B788; }
 
 .terminal-title {
-    color: #A1A1AA;
+    color: var(--c-white);
     font-family: monospace;
     font-size: 0.8rem;
     font-weight: 700;
@@ -516,7 +506,7 @@ body {
 
 .terminal-body {
     padding: 18px 20px;
-    color: #F4F4F5;
+    color: #FFFFFF;
     font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
     font-size: 0.88rem;
     line-height: 1.6;
@@ -526,14 +516,11 @@ body {
     margin-bottom: 8px;
 }
 
-.term-cyan { color: #38BDF8; font-weight: bold; }
-.term-green { color: #4ADE80; font-weight: bold; }
-.term-pink { color: #F472B6; font-weight: bold; }
-.term-yellow { color: #FDE047; font-weight: bold; }
+.term-cyan { color: var(--c-cyan); font-weight: bold; }
+.term-green { color: #52B788; font-weight: bold; }
+.term-red { color: #FF6B6B; font-weight: bold; }
+.term-white { color: #FFFFFF; font-weight: bold; }
 
-/* =========================================
-   BUTTONS & ACTIONS
-   ========================================= */
 .neo-btn {
     display: inline-flex;
     align-items: center;
@@ -563,10 +550,13 @@ body {
     box-shadow: 1px 1px 0px var(--border-dark);
 }
 
-.neo-btn-primary { background: var(--neo-yellow); }
-.neo-btn-cyan { background: var(--neo-cyan); }
-.neo-btn-pink { background: var(--neo-pink); color: #fff; }
-.neo-btn-pink:hover { color: #fff; }
+.neo-btn-primary { background: var(--c-cyan); color: var(--c-black); }
+.neo-btn-red { background: var(--c-red); color: #FFFFFF; }
+.neo-btn-red:hover { color: #FFFFFF; }
+.neo-btn-teal { background: var(--c-teal); color: #FFFFFF; }
+.neo-btn-teal:hover { color: #FFFFFF; }
+.neo-btn-dark { background: var(--c-black); color: var(--c-white); }
+.neo-btn-dark:hover { color: var(--c-white); }
 
 .neo-social-btn {
     display: inline-flex;
@@ -577,24 +567,18 @@ body {
     border: 3px solid var(--border-dark);
     border-radius: var(--radius-sm);
     box-shadow: var(--neo-shadow-sm);
-    background: #FFFFFF;
-    color: var(--text-dark);
+    background: var(--c-white);
+    color: var(--c-black);
     transition: all 0.15s ease;
 }
 
 .neo-social-btn:hover {
     transform: translate(-3px, -3px) rotate(-3deg);
     box-shadow: 5px 5px 0px var(--border-dark);
-    color: var(--text-dark);
+    background: var(--c-cyan);
+    color: var(--c-black);
 }
 
-.neo-social-btn:nth-child(1):hover { background: var(--neo-yellow); }
-.neo-social-btn:nth-child(2):hover { background: var(--neo-cyan); }
-.neo-social-btn:nth-child(3):hover { background: var(--neo-pink); color: #fff; }
-
-/* =========================================
-   FILTER / TAB CONTROLS
-   ========================================= */
 .neo-tab-btn {
     background: #FFFFFF;
     border: 2.5px solid var(--border-dark);
@@ -605,23 +589,22 @@ body {
     box-shadow: 2px 2px 0px var(--border-dark);
     cursor: pointer;
     transition: all 0.15s ease;
+    color: var(--c-black);
 }
 
 .neo-tab-btn.active {
-    background: var(--neo-yellow);
+    background: var(--c-teal);
+    color: #FFFFFF;
     box-shadow: 3px 3px 0px var(--border-dark);
     transform: translateY(-2px);
 }
 
-/* =========================================
-   TOAST NOTIFICATION
-   ========================================= */
 .neo-toast {
     position: fixed;
     bottom: 25px;
     right: 25px;
-    background: var(--neo-green);
-    color: var(--border-dark);
+    background: var(--c-cyan);
+    color: var(--c-black);
     border: 3.5px solid var(--border-dark);
     box-shadow: var(--neo-shadow);
     padding: 14px 22px;
@@ -642,11 +625,8 @@ body {
     opacity: 1;
 }
 
-/* =========================================
-   FORM & INPUT NEOBRUTALISM
-   ========================================= */
 .neo-form-card {
-    background: #FFFDF0;
+    background: var(--c-white);
     border: 3px dashed var(--border-dark);
     border-radius: var(--radius-md);
     padding: 24px;
@@ -669,14 +649,14 @@ body {
 
 .neo-input:focus {
     box-shadow: 4px 4px 0px var(--border-dark);
-    border-color: var(--border-dark);
+    border-color: var(--c-teal);
     transform: translateY(-2px);
 }
 
 .neo-input.input-error {
-    border-color: #EF4444;
+    border-color: var(--c-red);
     background: #FEF2F2;
-    box-shadow: 3px 3px 0px #EF4444;
+    box-shadow: 3px 3px 0px var(--c-red);
 }
 
 .neo-form-label {
@@ -690,7 +670,7 @@ body {
 }
 
 .neo-error-text {
-    color: #DC2626;
+    color: var(--c-red);
     font-weight: 800;
     font-size: 0.8rem;
     margin-top: 4px;
@@ -720,14 +700,82 @@ body {
 
 .btn-delete {
     background: #FEE2E2;
-    color: #DC2626;
+    color: var(--c-red);
 }
 .btn-delete:hover {
-    background: #EF4444;
+    background: var(--c-red);
     color: #FFFFFF;
 }
 
-/* Helper class for classList toggle (No inline style) */
 .d-none {
     display: none !important;
+}
+
+.neo-btn-cyan {
+    background: var(--c-cyan);
+    color: var(--c-black);
+}
+
+.term-yellow {
+    color: #FFD166;
+    font-weight: bold;
+}
+
+.term-pink {
+    color: #FF6B6B;
+    font-weight: bold;
+}
+
+.neo-form-card {
+    overflow: hidden;
+}
+
+.neo-card.jquery-highlight {
+    box-shadow: 0 0 0 4px var(--c-cyan), var(--neo-shadow);
+    transition: box-shadow 0.4s ease;
+}
+
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.neo-card.animated-in {
+    animation: fadeSlideIn 0.5s ease forwards;
+}
+
+.jquery-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #0769AD;
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 0.75rem;
+    padding: 4px 12px;
+    border-radius: var(--radius-full);
+    border: 2px solid var(--border-dark);
+    box-shadow: 2px 2px 0px var(--border-dark);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.semester-section {
+    transition: all 0.4s ease;
+}
+
+.neo-table tbody tr {
+    transition: all 0.3s ease;
+}
+
+.neo-table tbody tr.row-removing {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: all 0.4s ease;
 }
